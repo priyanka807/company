@@ -10,7 +10,7 @@
 </head>
 <style>
     .main-platform-containers{
-        width:100%;
+        width:50%;
         /* background-color: aqua; */
 
     }
@@ -19,31 +19,89 @@
         border:none;
         outline: none;
         border-bottom: 1px solid black;
-        width: 50%;
+        width: 80%;
     }
+
+    .tooltip1 {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip1 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color:white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+
+  position: absolute;
+  z-index: 1;
+} */
+
+.tooltip1:hover .tooltiptext {
+  visibility: visible;
+}
+    @media only screen and (min-width:420px ) and ( max-width:748px) {
+        input {
+            border:1px solid black; 
+            width: 100%;
+            color:blueviolet;
+        }
+
+    }
+
+    
+    /* label{
+        width: 30%;
+    } */
+
+    /* .form.groups{
+display: flex;
+justify-content: space-around;
+    } */
 
 </style>
 <body>
+
+    <div class="tooltip1">Hover over me
+        <span class="tooltiptext">tooltip1 text</span>
+      </div>
+
+
     <div class="main-platform-containers">
       <div  class="platform-details">Platform Details</div>
       <!-- <div class="form-group">
 
       </div> -->
       <form action="/action_page.php">
-        <label for="platform-name">Platform Name:</label>
-        <input type="text" id="platform-name" name="platform-name" value=""/><br>
+        <div class="form-groups">
+            <label for="platform-name">Platform Name:</label>
+        <input type="text" id="platform-name" name="platform-name" value=""/>
+        </div>
         
+        <div class="form-groups">
         <label for="platform-url">Platform URL:</label>
-        <input type="text" id="platform-url" name="platform-url" value=""/><br>
-        
+        <input type="text" id="platform-url" name="platform-url" value=""/>
+    </div>
+        <div class="form-groups">
         <label for="platform-status">Platform Status:</label>
-        <input type="text" id="platform-status" name="platform-status" value=""/><br>
+        <input type="text" id="platform-status" name="platform-status" value=""/>
+    </div>
+
+
+        <div class="d-flex">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" value="" style="border-bottom:1px solid #000;"/>
+            
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" value="" style="border-bottom:1px solid #000;"/>
+            
+        </div>
         
-        <label for="start-date">Start Date:</label>
-        <input type="date" id="start-date" name="start-date" value="" style="border-bottom:1px solid #000;"/>
-        
-        <label for="end-date">End Date:</label>
-        <input type="date" id="end-date" name="end-date" value="" style="border-bottom:1px solid #000;"/><br><br>
         
        
       </form>
@@ -51,28 +109,29 @@
 
     </div>
 
-    <!-- <div class="container">
-        <div class="row">
-            <div class=" col-md-6  ">
+    <!-- <div class="container-fluid">
+
+       
+            <div class="  col-md-6 bg-success ">
 1
             </div>
 
-            <div class="col-md-6  ">
+            <div class=" col-md-6 bg-success ">
 2
             </div>
 
-            <div class=" col-md-6  ">
+            <div class="  col-md-6 bg-success ">
 3
             </div>
-            <div class="col-md-6  ">
-           <div class="col-md-3">4</div>
-           <div class="col-md-3">5</div>
+            <div class=" col-md-6 bg-success  d-flex">
+           <div class="col-md-6  bg-danger ">4</div>
+           <div class="col-md-6 bg-dark">5</div>
             </div>
-        </div>
+       
     </div> -->
 
 
-
+    
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -83,7 +142,7 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -138,7 +197,7 @@
 </form>
 
 </body>
-</html>
+</html> -->
 
 <!-- 
 
