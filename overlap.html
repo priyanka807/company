@@ -1,0 +1,95 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<style>
+   body {
+
+  height: 100vh;
+  margin: 0;
+}
+
+.parent-div {
+  display: flex;
+  width: 30%;
+  position: absolute;
+ 
+}
+.to-airports{
+
+    left: 200px;
+}
+
+/* 
+.to-airports{
+    left: 200px;
+    width: 50%;
+}
+.from-airports{
+    width: 50%; 
+} */
+
+
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Buttons</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="parent-div">
+    <div class="child-div to-airports">
+      <input type="text" id="to-airport" placeholder="To Airport">
+    </div>
+    <div class="child-div from-airports">
+      <input type="text" id="from-airport" placeholder="From Airport">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS Layers Effect</title>
+<style>
+    .container{
+        position: relative;
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        opacity: 0.9;
+        position: absolute;
+    }
+    .red{
+        background: #ff0000;
+        z-index: 3;
+    }
+    .green{
+        top: 30px;
+        left: 30px;
+        background: #00ff00;
+        z-index: 1;
+    }
+    .blue{
+        top: 60px;
+        left: 60px;
+        background: #0000ff;
+        z-index: 3;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+</body>
+</html>
