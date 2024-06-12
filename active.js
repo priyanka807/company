@@ -79,14 +79,21 @@ data.map((item) => {
 
 
 
+
+
+
 const  navLinks = document.querySelectorAll(".nav-links")
+
 navLinks.forEach((element,i)=>{
   element.addEventListener(('click'),()=>{
     document.querySelector('.active')?.classList.remove('active');
     element.classList.add('active')
   })
 })
+
 console.log(navLinks,'navLinks')
+
+
 
 
   

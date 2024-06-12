@@ -1,95 +1,74 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<style>
-   body {
-
-  height: 100vh;
-  margin: 0;
-}
-
-.parent-div {
-  display: flex;
-  width: 30%;
-  position: absolute;
- 
-}
-.to-airports{
-
-    left: 200px;
-}
-
-/* 
-.to-airports{
-    left: 200px;
-    width: 50%;
-}
-.from-airports{
-    width: 50%; 
-} */
-
-
-</style>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form with Buttons</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <div class="parent-div">
-    <div class="child-div to-airports">
-      <input type="text" id="to-airport" placeholder="To Airport">
-    </div>
-    <div class="child-div from-airports">
-      <input type="text" id="from-airport" placeholder="From Airport">
-    </div>
-  </div>
-
-  <script src="app.js"></script>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Example of CSS Layers Effect</title>
+<title>Example of Overlap Button</title>
 <style>
     .container{
         position: relative;
+        width: 30%;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
+
     .box{
-        width: 150px;
-        height: 150px;
-        opacity: 0.9;
-        position: absolute;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
     }
-    .red{
-        background: #ff0000;
-        z-index: 3;
-    }
-    .green{
-        top: 30px;
-        left: 30px;
-        background: #00ff00;
+
+    .red {
+        position: relative;
+        left: 70px;
         z-index: 1;
+        border: 1px solid black !important;
+        /* border-right: 4px solid red  !important; */
+
     }
-    .blue{
-        top: 60px;
-        left: 60px;
-        background: #0000ff;
-        z-index: 3;
+
+    .green {
+      border: 1px solid black !important;
+
+        /* No specific positioning needed */
     }
+
+    .active {
+        background-color: red;
+        border: 1px solid red !important;
+    }
+
+    /* .active.black-border {
+        border: 4px solid black;
+        /* border-right-color: none !important; */
+
+    } */
 </style>
 </head>
 <body>
-    <div class="container">
-        <div class="box red"></div>
-        <div class="box green"></div>
-        <div class="box blue"></div>
-    </div>
+  <div class="container">
+    <div class="nav-links box red active">HOME</div>
+    <div class="nav-links box green">ABOUT</div>
+  </div>
+
+  <script>
+    const box = document.querySelectorAll(".box");
+    box.forEach((elem) => {
+        elem.addEventListener(('click'), () => {
+            document.querySelector('.active')?.classList.remove('active', 'black-border');
+            elem.classList.add('active');
+            box.forEach((otherBox) => {
+                if (otherBox !== elem) {
+                    otherBox.classList.add('black-border');
+                }
+            });
+        });
+    });
+  </script>
 </body>
 </html>
