@@ -9,8 +9,15 @@
 
 <!-- Container for the header -->
 <div id="header"></div>
+<div id="navbar" style="margin-top: 20px;"></div>
 
-<!-- JavaScript to load the header content -->
+<!-- Container for the navbar -->
+<!-- Container for the footer -->
+<div id="footer" style="margin-top: 30px;"></div>
+
+
+
+
 <script>
     fetch("header.html")
         .then(response => {
@@ -25,6 +32,38 @@
         })
         .catch(error => {
             console.error("Error loading header:", error);
+        });
+
+   
+
+    fetch("footer.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to load footer");
+            }
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById("footer").innerHTML = html;
+            console.log("Footer loaded successfully");
+        })
+        .catch(error => {
+            console.error("Error loading footer:", error);
+        });
+
+        fetch("navbar.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to load navbar");
+            }
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById("navbar").innerHTML = html;
+            console.log("Navbar loaded successfully");
+        })
+        .catch(error => {
+            console.error("Error loading navbar:", error);
         });
 </script>
 
