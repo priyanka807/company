@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justairports</title>
+</head>
+<body>
+
+<!-- Container for the header -->
+<div id="header"></div>
+
+<!-- JavaScript to load the header content -->
+<script>
+    fetch("header.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to load header");
+            }
+            return response.text();
+        })
+        .then(html => {
+            document.getElementById("header").innerHTML = html;
+            console.log("Header loaded successfully");
+        })
+        .catch(error => {
+            console.error("Error loading header:", error);
+        });
+</script>
+
+</body>
+</html>

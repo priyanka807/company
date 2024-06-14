@@ -1,0 +1,14 @@
+.main_container {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aqua; */
+  }
+  .container {
+    max-width: 1170px;
+ 
+  }
+
+  .bg_blue{
+    background-color: #2a2867 !important;
+}
