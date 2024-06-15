@@ -12,7 +12,6 @@
         justify-content: center;
         align-items: center;
         border-radius: 50px;
-
         border: 1px solid black  !important;
 
     }
@@ -25,32 +24,12 @@
         align-items: center;
         border-radius: 50px;
     }
-
-    .red {
-        /* position: relative;
-        left: 70px; */
-        /* z-index: 1; */
-        /* border: 1px solid black !important; */
-        /* border-right: 4px solid red  !important; */
-
-    }
-
-    .green {
-      /* border: 1px solid black !important; */
-
-        /* No specific positioning needed */
-    }
-
     .active {
         background-color: red;
         border: 1px solid red !important;
     }
 
-    /* .active.black-border {
-        border: 4px solid black;
-        /* border-right-color: none !important; */
-
-    } */
+   
 </style>
 </head>
 <body>
@@ -65,11 +44,7 @@
         elem.addEventListener(('click'), () => {
             document.querySelector('.active')?.classList.remove('active', 'black-border');
             elem.classList.add('active');
-            box.forEach((otherBox) => {
-                if (otherBox !== elem) {
-                    otherBox.classList.add('black-border');
-                }
-            });
+
         });
     });
   </script>

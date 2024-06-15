@@ -2,96 +2,52 @@
 
 const contentDisplay =  document.getElementById("content-display")
 
-const data = [1, 2, 3, 4, 5];
+const data = [1, 2, 3, 4, 5];  ///nav items 
 
 
-// function activeClass(){
-//     for(let i = 1 ; i<=5;i++ ){
-//         const button = document.createElement('button');
-//     button.innerText = i;
-//     contentDisplay.appendChild(button)
+data.forEach((item) => {
 
-//     }
-// }
-// activeClass()
-
-
-
-
-// data.map((item,index)=>{
-//     const createbutton =  document.createElement('button')
-//     createbutton.innerText =  item
-//     // createbutton.add.Classlist('')
-//     contentDisplay.appendChild(createbutton)
-
-//     createbutton.addEventListener('click',function(){
-//         const buttons = contentDisplay.getElementsByTagName('button');
-//         console.log(buttons ,'buttons ')
-
-        
-
-//    if(item===createbutton.innerText){
-//     console.log(item,'click')
-//     console.log(createbutton.innerText,'click')
-
-//     createbutton.classList.add('active')
-//    }else{
-//     createbutton.classList.add('inactive')
-//     createbutton.classList.remove('active')
-
-
-//    }
- 
-
-
-
-
-// })
-
-// })
-
-
-data.map((item) => {
-    const createbutton = document.createElement('button');
+    const createbutton = document.createElement('button');  //create button have 5 buttn element 
     createbutton.innerText = item;
     contentDisplay.appendChild(createbutton);
   
-    createbutton.addEventListener('click', function() {
-      // Remove 'active' class from all buttons
 
-      const buttons = contentDisplay.getElementsByTagName('button');   //home about section ->nav-links 
-      console.log(buttons ,'buttons ')
-  
-  
-  
-      for (let btn of buttons) {
-      console.log(btn,'btn')
-        btn.classList.remove('active');             // this will not work first time  this will work second time    
-        //  btn.classList.add('inactive');                  
-      }
+    const buttons = contentDisplay.getElementsByTagName('button');    
+
+    createbutton.addEventListener('click', function() {
+
+      // for (let btn of buttons) {
+      // console.log(btn,'btn')
+      //   btn.classList.remove('active');             
+      //    btn.classList.add('inactive');                  
+      // }
   
      
-      createbutton.classList.add('active');         
-       createbutton.classList.remove('inactive');        
+      // createbutton.classList.add('active');         
+      //  createbutton.classList.remove('inactive');  
+       
+       document.querySelector('.active')?.classList.remove('active')
+       createbutton.classList.add('active')
+
+     
     });
   });
 
 
 
+  //that case when you try to achieve active function giving same class name in all element  mostly used in navbar 
 
 
+const navLinks = document.querySelectorAll('.nav-links')
 
+navLinks.forEach((elem,i)=>{
 
-const  navLinks = document.querySelectorAll(".nav-links")
+  elem.addEventListener(('click'),()=>{
+    document.querySelector('.active')?.classList.remove('active')
 
-navLinks.forEach((element,i)=>{
-  element.addEventListener(('click'),()=>{
-    document.querySelector('.active')?.classList.remove('active');
-    element.classList.add('active')
+    elem.classList.add('active')
   })
 })
-
-console.log(navLinks,'navLinks')
 
 
 
