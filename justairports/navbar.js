@@ -1,6 +1,7 @@
-let navbar = document.getElementById("navbar")
+// let navbar = document.getElementById("navbar")
 
-navbar.innerHTML=`
+// navbar.innerHTML=`
+
  <nav class="navbar navbar-expand-lg "  style="background-color: #2a2867;">
         <div class="p-15  p-lg-3">
 
@@ -105,3 +106,4 @@ menu_item.addEventListener('click',function(event){
 borderWhite.classList.toggle('border_white')
 
 })
+`

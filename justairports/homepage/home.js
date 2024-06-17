@@ -36,4 +36,12 @@ borderWhite.classList.toggle('border_white')
 
 })
 
+
+document.querySelectorAll('.document-item').forEach((item)=>{
+item.addEventListener('click',(event)=>{
+event.preventDefault();
+event.stopPropagation()
+})
+})
+
 // <!-- JAVASCRIPT LOGIC FOR NAVBAR SECTION -->
