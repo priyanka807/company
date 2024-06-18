@@ -4,36 +4,40 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
-/* .icon-bar {
+.right_sidebar {
   position: fixed;
   top: 50%;
   right:0;
-  -webkit-transform: translateY(-50%);
+  /* -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
+  display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
+    transform: translateY(-50%);
 }
 
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
+.right_sidebar a {
   transition: all 0.3s ease;
   font-size: 20px;
 }
 
-.sharing-sidebar{
+.right_sidebar .right_sidebar_icon{
 
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     padding: 8px;
-   
+    width:30px;
+    margin-bottom:4px;
     transition: all 2s ease;
     background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
     box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
 }
-
-.icon-bar .sharing-sidebar i{
+.right_sidebar_icon:hover{
+    width: 200px;
+}
+.right_sidebar .right_sidebar_icon i{
     background: #fff;
     font-size: 15px;
    
@@ -44,81 +48,69 @@
     text-align: center;
     line-height: 30px;
 
-} */
-.share_button_sidebar{
+} 
+
+
+
+
+    .main_container {
     position: fixed;
-  top: 50%;
-  right:0;  
-  transform: translateX(-50%);
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end; 
 }
 
-.share_button_sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin:0;
-    transform: translateX(-230px);
+
+.items {
+    width: 50px;
+    transition: width 0.3s ease, background-color 0.3s ease; /* Add transitions for smooth effects */
 }
 
-.share_button_sidebar ul li{
-display: block;
-margin: 5px;
-background-color: rgba(0,0,0,.5);
-width: 300px;
-text-align: right;
-padding: 10px;
-border-radius: 0 30px 30px 0;
-transition: all 1s;
-  /* display: block;
-  margin: 5px;
-  background-color: rgba(0,0,0,.5);
-  width: 300px;
-  text-align: right;
-  padding: 10px;
-  border-radius: 0 30px 30px 0;
-  transition: all 1s; */
+
+
+.items {
+    background-color: lightgray;
 }
+
+
+.items:hover {
+    width: 250px !important;
+    background-color: red;
+}
+
 
 </style>
 <body>
 
-<!-- <div class="icon-bar">
-    <div class="sharing-sidebar">
+<div class="right_sidebar">
+    <div class="right_sidebar_icon">
         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
 
     </div>
-    <div class="sharing-sidebar">
+    <div class="right_sidebar_icon">
         <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
 
     </div>
-    <div class="sharing-sidebar">
+    <div class="right_sidebar_icon">
         <a href="#" class="google"><i class="fa fa-google"></i></a> 
 
     </div>
  
     
+</div>
+
+
+
+
+
+<!-- <div class="main_container">
+    <div class="items">1</div>
+    <div class="items">2</div>
+    <div class="items">2</div>
 </div> -->
 
-
-
-<div class="share_button_sidebar">
-
-<ul class="">
-    <li class="fb">
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
-
-    </li>
-    <li class="twitter">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
-
-    </li>
-    <li class="google">
-        <a href="#" class="google"><i class="fa fa-google"></i></a> 
-
-    </li>
- 
-    
-</ul>
-</div>
 
 </body>
 </html> 

@@ -536,42 +536,38 @@ color: #fff !important;
 
 
 /* right side  social widget  style start */
-.icon-bar {
+.right_sidebar {
     position: fixed;
     top: 50%;
     right:0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+   
+    display: flex;
+      flex-direction: column; 
+      align-items: flex-end; 
+      transform: translateY(-50%);
   }
- 
-  .icon-bar a {
-    display: block;
-    text-align: center;
+  
+  .right_sidebar a {
     transition: all 0.3s ease;
     font-size: 20px;
   }
   
-  .sharing-sidebar{
-    width: 40px;
-      -webkit-border-bottom-left-radius: 50px;
-      margin-bottom:4px;
-      -moz-border-radius-topleft: 50px;
-      -moz-border-radius-bottomleft: 50px;
+  .right_sidebar .right_sidebar_icon{
+  
       border-top-left-radius: 50px;
       border-bottom-left-radius: 50px;
-      width: 300px;
-      transform: translateX(-270px);
-
-      text-align: left;
       padding: 8px;
+      width:50px;
+      margin-bottom:4px;
       transition: all 2s ease;
       background: #d6249f;
       background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
       box-shadow: 0 3px 10px rgba(0, 0, 0, .25);
   }
-  
-  .icon-bar .sharing-sidebar i{
+  .right_sidebar_icon:hover{
+      width: 200px;
+  }
+  .right_sidebar .right_sidebar_icon i{
       background: #fff;
       font-size: 15px;
      
@@ -579,11 +575,11 @@ color: #fff !important;
       border-radius: 50px;
       height: 30px;
       width: 30px;
-      /* text-align: center; */
+      text-align: center;
       line-height: 30px;
   
-  }
- 
+  } 
+  
   
   .float_whatsapp {
     transform: scale3d(1,1,1);
