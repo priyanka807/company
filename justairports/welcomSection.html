@@ -28,10 +28,10 @@
 </style>
 </head>
 <body>
-  <form id="airportForm">
+  <!-- <form id="airportForm"> -->
     <div class="container">
       <label class="box active">
-          <input type="radio" name="direction" value="to-airport" checked> TO AIRPORT
+          <input type="radio" name="direction" value="to-airport" id="toAirport" checked> TO AIRPORT
       </label>
       <label class="box">
           <input type="radio" name="direction" value="from-airport"> FROM AIRPORT
@@ -68,9 +68,9 @@
             <!-- Add more airports as needed -->
         </select>
     </div>
-
-    <input type="submit" value="Submit">
-  </form>
+<button id="submit">submit</button>
+    <!-- <input type="submit" value="Submit" > -->
+  <!-- </form> -->
 
   <script>
     const box = document.querySelectorAll(".box");
@@ -91,16 +91,20 @@
         });
     });
 
-    document.getElementById('airportForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
-        const formData = new FormData(this);
-        console.log('Selected Direction:', formData.get('direction'));
-        console.log('Pickup Postcode:', formData.get('pickup-postcode'));
-        console.log('Pickup Airport:', formData.get('pickup-airport'));
-        console.log('Dropoff Postcode:', formData.get('dropoff-postcode'));
-        console.log('Dropoff Airport:', formData.get('dropoff-airport'));
-        // Now you can process the form data as needed
-    });
+    // document.getElementById('airportForm').addEventListener('submit', function(event) {
+    //     event.preventDefault(); // Prevent form submission
+    //     const formData = new FormData(this);
+    //     console.log('Selected Direction:', formData.get('direction'));
+    //     console.log('Pickup Postcode:', formData.get('pickup-postcode'));
+    //     console.log('Pickup Airport:', formData.get('pickup-airport'));
+    //     console.log('Dropoff Postcode:', formData.get('dropoff-postcode'));
+    //     console.log('Dropoff Airport:', formData.get('dropoff-airport'));
+    //     // Now you can process the form data as needed
+    // });
+    document.getElementById('submit').addEventListener('click', function() {
+console.log(document.getElementById('toAirport').value)
+
+    })   
   </script>
 </body>
 </html>

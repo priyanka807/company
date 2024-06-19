@@ -54,7 +54,7 @@
     width: 100%;
     padding: 20px;
 
-    background-color: rgb(232, 250, 244);
+    background-color: #1f1d6f;
 
 }
 .form_container img{
@@ -76,110 +76,537 @@
     line-height: 30px;
     margin: 0 0 20px 0;
 }
-/* .airport_payment_form{
+
+.form_container input[type="radio"] {
+        display: none;
+    }
+   .select_airport,.select_payment_type{
     width: 100%;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+    /* border-radius: 50px; */
+    height: 44px;
+   
+   }
+   .select_airport div,.select_payment_type div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    color: #000;
+    font-weight: 700;
+    /* without overflow design */
+    background-color: #fff;
+    border: 1px solid #000;
+    /* border-radius: 50px; */
+   }
+   .active_select_airpot_station,.active_payment_type{
+    color: #fff !important;
+    background-color: #ef1616 !important;
+    border: 1px solid red !important;
+   }
+.pick_up .title,.drop-off .title{
+   
+    font-family: Roboto, sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0 0 20px 0;
+
+}
+.pick_up label,.drop-off label{
+    color: #fff;
+    margin:12px 0px 5px 0px;
+    font-weight: 600;
+}
+.pick_up select,.drop-off select{
+    line-height: 30px;
+}
+.luggage .title{
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    font-weight: 500;
+    line-height: 30px;
+}
+table{
+font-family: arial, sans-serif;
+  /* border-collapse: collapse; */
+  width: 100%;
+  border: dotted 1px #225da8;
+margin-bottom: 20px;
+
 }
 
-.to-airport{
-width: 50%;
+ th {
+  text-align: left;
+  padding: 8px;
+  color: #fff;
 }
-.from-airport{
-    width: 50%;
-} */
+
+
+
+table td{
+background:#225da8;
+padding: 5px;
+font-size: 11px;
+color: #fff;
+}
+
+  table{
+    background-color: #225da8;
+    border: dotted 1px #225da8;
+    font-size: 11px;
+    width: 100%;
+    font-weight: 400;
+    text-transform: none;
+  
+    margin: 0 0 20px 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+} 
+.lullage_info  th{
+
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #01377c;
+    height: 25px;
+
+}
+.select_items select{
+    border-radius:0px !important;
+    margin-bottom:15px;
+    line-height:30px;
+}
+.baby_set {
+    font-size: 18px;
+    padding: 0 8px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    font-weight: 600;
+    color: #fff;
+}
+.baby_sitting_container{
+
+    font-weight: 600;
+    color: #fff;  
+    line-height: 45px;
+
+}
+.hidden{
+    display:none ;
+}
+.get_esti {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+ 
+}
+
+
+.btn-success {
+    background: #ec1c24;
+    border: solid 1px #ec1c24;
+}
+.btn-success:hover{
+    background: #dd363c;
+
+}
+
 </style>
   <!--welcome_section   style   end-->
   <body>
     <!--welcome   section  start -->
 
-    <div class="welcome_container">
-      <div class="container">
+  
+<div class="welcome_container">
+    <div class="container">
         <div class="welcome_section">
-          <div class="row">
-            <div class="col-md-5 col-xs-12 col-sm-6">
-              <div class="welcome_lefts">
-
-                <div
-                  id="carouselExampleSlidesOnly"
-                  class="carousel slide"
-                  data-bs-ride="carousel"
-                >
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="bokg">
-                        <i class="fa fa-arrow-down"></i> Get Estimate<i
-                          class="fa fa-arrow-down"
-                        ></i>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="bokg1">
-                        <i class="fa fa-arrow-down"></i> BEST SERVICE<i
-                          class="fa fa-arrow-down"
-                        ></i>
-                      </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="bokg2">
-                        <i class="fa fa-arrow-down"></i> BEST PRICE<i
-                          class="fa fa-arrow-down"
-                        ></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form_container">
-                    <img data-src="https://www.justairports.com/images/home-steps.jpg" class="" alt="" src="https://www.justairports.com/images/home-steps.jpg">
-                    <p></p>
-
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 col-sm-12">
-                      <div class="payment">
-                        <div class="title">Please ! Choose Journey Type
-                        </div>
-                      </div>
-
-        <form action="" class="airport_payment_form">
             <div class="row">
-            <div class="to-airport col-md-6">
-            <label for="to-airport">TO AIRPORT</label>
-            <input type="radio"  name="to-airport" value="to-airport"  checked>
-        </div>
+                <div class="col-md-5 col-xs-12 col-sm-6">
+                    <div class="welcome_lefts">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="bokg">
+                                        <i class="fa fa-arrow-down"></i> Get Estimate <i class="fa fa-arrow-down"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="bokg1">
+                                        <i class="fa fa-arrow-down"></i> BEST SERVICE <i class="fa fa-arrow-down"></i>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="bokg2">
+                                        <i class="fa fa-arrow-down"></i> BEST PRICE <i class="fa fa-arrow-down"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="from-airport col-md-6">
-            <label for="from-airport">FROM AIRPORT</label>
-            <input type="radio"  name="from-airport" value="from-airport">
-        </div>
+                        <div class="form_container">
+                            <img src="https://www.justairports.com/images/home-steps.jpg" alt="">
+                            <p></p>
+
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12 col-sm-12">
+                                    <div class="payment">
+                                        <div class="title">Please! Choose Journey Type</div>
+                                    </div>
+
+                                    <form action="" class="airport_payment_form">
+                                        <div class="select_airport">
+                                            <div class="to-airport col-md-6 select_airpot_station active_select_airpot_station">
+                                                <label for="to-airport" id="to_airport">TO AIRPORT
+                                                    <input type="radio" name="journey_type" value="to-airport" checked></label>
+                                            </div>
+                                            <div class="from-airport col-md-6 select_airpot_station">
+                                                <label for="from-airport"  id="from_airport">FROM AIRPORT
+                                                    <input type="radio" name="journey_type" value="from-airport"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="pick_up" id="pick_up">
+                                            <div class="title" style="margin-top:20px;">Journey Details</div>
+                                            <span id="out_form_fields" style="display: inline;"></span>
+
+                                            <label for="select_drop_post">Enter prefix of Pick up postcode i.e WC1, SE1, E1 etc</label>
+                                            <select class="form-select" id="select_pick_post" name="select_drop_post" aria-label="Default select example">
+                                                <option value="">select</option>
+                                                <optgroup label="-----------------------" style="color:#0000CC;"></optgroup>
+                                                <option value="W1">W1 - Central London</option>
+                                                <option value="W2">W2 - Paddington</option>
+                                                <option value="W2">W2 - Lancaster Gate Station</option>
+                                                <option value="W3">W3 - Acton</option>
+                                                <option value="W4">W4 - Chiswick</option>
+                                                <option value="W5">W5 - Ealing</option>
+                                                <option value="W6">W6 - Hammersmith</option>
+                                                <option value="W7">W7 - Hanwell</option>
+                                                <option value="W8">W8 - Kensington</option>
+                                                <option value="W9">W9 - Maida Vale</option>
+                                                <option value="476">W10 - North Kensington</option>
+                                                <option value="477">W11 - Notting Hill</option>
+                                                <option value="478">W12 - Shepherds Bush</option>
+                                                <option value="479">W13 - West Ealing</option>
+                                                <option value="480">W14 - West Kensington</option>
+                                                <option value="WC1">WC1 - Central London</option>
+                                                <option value="WC2">WC2 - Central London</option>
+                                                <optgroup label="-----------------------" style="color:#0000CC;"></optgroup>
+                                                <option value="EC1">EC1 - Central London</option>
+                                                <option value="EC2">EC2 - Central London</option>
+                                                <option value="EC2">EC2 - Liverpool Street Station</option>
+                                                <option value="EC3">EC3 - Central London</option>
+                                                <option value="EC4">EC4 - Central London</option>
+                                            </select>
+
+                                            <label for="select_airports">Select Airports</label>
+                                            <select class="form-select" aria-label="Default select example" name="select_airports" id="select_pick_airport">
+                                                <option value="Heathrow">Heathrow Airport</option>
+                                                <option value="Luton">Luton Airport</option>
+                                                <option value="Gatwick">Gatwick Airport</option>
+                                                <option value="Stansted">Stansted Airport</option>
+                                                <option value="City">City Airport</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="drop-off" id="drop_off" style="display:none;">
+                                            <div class="title" style="margin-top:20px;">Journey Details</div>
+                                            <span id="out_form_fields" style="display: inline;"></span>
+
+                                          
+
+                                            <label for="select_airports">Select Airports</label>
+                                            <select class="form-select" aria-label="Default select example" name="select_drop_airport" id="select_airports">
+                                                <option value="Heathrow">Heathrow Airport</option>
+                                                <option value="Luton">Luton Airport</option>
+                                                <option value="Gatwick">Gatwick Airport</option>
+                                                <option value="Stansted">Stansted Airport</option>
+                                                <option value="City">City Airport</option>
+                                            </select>
+
+                                            <label for="select_drop_post">Enter prefix of Drop off postcode i.e WC1, SE1, E1 etc</label>
+                                            <select class="form-select" id="select_drop_post" name="select_drop_post" aria-label="Default select example">
+                                                <option value="">select</option>
+                                                <optgroup label="-----------------------" style="color:#0000CC;"></optgroup>
+                                                <option value="W1">W1 - Central London</option>
+                                                <option value="W2">W2 - Paddington</option>
+                                                <option value="W2">W2 - Lancaster Gate Station</option>
+                                                <option value="W3">W3 - Acton</option>
+                                                <option value="W4">W4 - Chiswick</option>
+                                                <option value="W5">W5 - Ealing</option>
+                                                <option value="W6">W6 - Hammersmith</option>
+                                                <option value="W7">W7 - Hanwell</option>
+                                                <option value="W8">W8 - Kensington</option>
+                                                <option value="W9">W9 - Maida Vale</option>
+                                                <option value="476">W10 - North Kensington</option>
+                                                <option value="477">W11 - Notting Hill</option>
+                                                <option value="478">W12 - Shepherds Bush</option>
+                                                <option value="479">W13 - West Ealing</option>
+                                                <option value="480">W14 - West Kensington</option>
+                                                <option value="WC1">WC1 - Central London</option>
+                                                <option value="WC2">WC2 - Central London</option>
+                                                <optgroup label="-----------------------" style="color:#0000CC;"></optgroup>
+                                                <option value="EC1">EC1 - Central London</option>
+                                                <option value="EC2">EC2 - Central London</option>
+                                                <option value="EC2">EC2 - Liverpool Street Station</option>
+                                                <option value="EC3">EC3 - Central London</option>
+                                                <option value="EC4">EC4 - Central London</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="payment" style="margin-top: 20px;">
+                                            <div class="title">Please! Choose Payment Type</div>
+                                        </div>
+
+
+                                        <div class="select_payment_type">
+
+                                            <div class="to-airport col-md-6 select_payment_oftion  active_payment_type">
+                                                <label for="Credit_Card" id="Credit_Card">CREDIT CARD
+                                                    <input type="radio" name="journey_type" value="Credit_Card" checked></label>
+                                            </div>
+
+                                            <div class="from-airport col-md-6 select_payment_oftion">
+                                                <label for="Cash"  id="Cash">CASH
+                                                    <input type="radio" name="journey_type" value="Cash"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="luggage" >
+                                            <div class="title">Choose Passenger and Luggage
+                                             
+                                           </div>
+                                        </div>
+
+                                        <table class="lullage_info">
+                                            <tr>
+                                              <th></th>
+                                              <th>Weight</th>
+                                              <th>Size</th>
+                                            </tr>
+                                            <tr>
+                                              <td>Check-in Luggage</td>
+                                              <td>23-25 kg</td>
+                                              <td>35 x 30 x 16 Inches</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Hand Luggage</td>
+                                              <td>8-10 kg</td>
+                                              <td>22 x 18 x 10 Inches</td>
+                                           </tr>
+                                          </table>
+
+    <div class="select_items">
+        <div class="passengers">
+
+            <select class="form-select" aria-label="Default select example" name="passengers" id="passengers">
+              <option value="">Passengers</option>
+
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+            </select>
+
+</div>
+
+<div class="passengers">
+            <select class="form-select" aria-label="Default select example" name="check_in_luggage" id="check_in_luggage">
+              <option value="">Check In Luggages</option>
+
+              <option value="0">0</option>
+              <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+</div>
+
+<div class="passengers">
+            <select class="form-select" aria-label="Default select example" name="hand_luggage" id="hand_luggage">
+              <option value="">Hand Luggages</option>
+
+              <option value="0">0</option>
+              <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+</div>
     </div>
-        <button>GET ESTIMATE</button>
-        </form>
 
 
+    <div class="payment" >
+        <div class="title">Baby / Booster Seat (s) </div>
+
+         
+      
+    </div>
+    <div>
+        <label class="baby_set"><b>Baby / Booster Seat Required ? 
+            <br> ( £ 
+            
+            <span id="babyseatprice">5.00
+            </span> each additional charges)</b>
+            </label>
+
+            <div class="baby_sitting_container"  >
+                <label for="baby_sitting">
+                    <input type="checkbox" id="baby_sitting" name="baby_sitting"  checked>
+                    Baby Sitting
+                </label>
+
+                <div class="row   "  id="baby_sitting_dropdown"   >
+               <div class="col-md-9">
+                <label class=" control-label padding-top-5"> <img src="https://www.justairports.com/images/icn/booster.png"> 
+                    <label class="ng-binding">Number of Baby / Booster Seats :
+                    </label> 
+                    </label>
+               </div>
+               <div class="col-md-3">
+                <select name="child1" id="no_of_childs" class="form-control"  style="min-width: 60px;"> 
+                
+                    <option value="" selected="selected">0</option> 
+                    
+                    <option value="1">1</option> 
+                    
+                    <option value="2">2</option> 
+                    
+                    <option value="3">3</option> 
+                    
+                    <option value="4">4</option> 
+                    
+                    <option value="5">5</option> 
+                    
+                    <option value="6">6</option> 
+                    </select> 
+               </div>
+                </div>
+
+            </div>
+            <p style="color:#fbba27;border:none;">Any Transfer from anywhere between 2200 to 0200 Hours will cost £20.00 extra to passenger.</p>
+
+        </div>
+  
+    
+        <div class="col-md-12 col-sm-12 "> <a class="btn btn-success get_esti w-100" id="get_estimate"  style="color:#fff;" href="javascript: SubmitJourneyBookerform()"> Get Estimate</a> 
+        </div>                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="col-md-7 col-xs-12 col-sm-6">
-              <div class="welcome_rights">
-                <div class="welcome_rights bg-body-tertiary">
-                  hello meri jaan
+                <div class="col-md-7 col-xs-12 col-sm-6">
+                    <div class="welcome_rights bg-body-tertiary">
+                        hello meri jaan
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
+
+
 
     <!--welcome   section   end-->
 
     <!--welcon_section    javascript  start -->
 
-    <script></script>
+    <script>
+ const pick_up = document.getElementById('pick_up')
+        const drop_off = document.getElementById('drop_off')
+        const to_airport = document.getElementById('to_airport')
+        
+        const from_airport  = document.getElementById('from_airport')
+        const baby_sitting  = document.getElementById('baby_sitting')
+        const baby_sitting_dropdown  = document.getElementById('baby_sitting_dropdown')
+        const select_pick_post = document.getElementById('select_pick_post')
+        const select_pick_airport = document.getElementById('select_pick_airport')
+        const  Credit_Card = document.getElementById('Credit_Card')
+        const  Cash = document.getElementById('Cash')
+        const  passengers = document.getElementById('passengers')
+        const  check_in_luggage = document.getElementById('check_in_luggage')
+        const  hand_luggage = document.getElementById('hand_luggage')
+        const no_of_childs = document.getElementById('no_of_childs')
+        const get_estimate = document.getElementById('get_estimate')
+
+
+        const select_drop_post = document.getElementById('select_drop_post')
+        const select_drop_airport = document.getElementById('select_drop_airport')
+
+
+
+    const selectAirportStation =     document.querySelectorAll('.select_airpot_station')
+    selectAirportStation.forEach((elem)=>{
+       
+        elem.addEventListener('click',function(){
+            document.querySelector('.active_select_airpot_station')?.classList.remove('active_select_airpot_station');
+            elem.classList.add('active_select_airpot_station')
+if(elem.querySelector('input[type="radio"]').value==="to-airport"){
+    pick_up.style.display = "block"
+    drop_off.style.display = "none"
+
+}else{
+    pick_up.style.display = "none"
+    drop_off.style.display = "block" 
+}
+        })
+    }) 
+    
+const select_payment_oftion = document.querySelectorAll('.select_payment_oftion')
+select_payment_oftion.forEach((elem)=>{
+       
+       elem.addEventListener('click',function(){
+        document.querySelector('.active_payment_type')?.classList.remove('active_payment_type');
+        elem.classList.add('active_payment_type')
+    })
+    }) 
+   
+
+    baby_sitting.addEventListener('change',function(){
+      
+        if(baby_sitting.checked){
+            baby_sitting_dropdown.classList.remove('hidden');
+        }else{
+            baby_sitting_dropdown.classList.add('hidden');
+
+        }
+    }) 
+
+//     get_estimate.addEventListener('click',function(){
+//      console.log(pick_up.value,drop_off.value) 
+      
+//   }) 
+
+    </script>
     <!--welcon_section    javascript   end-->
 
     <script

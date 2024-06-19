@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Example of Overlap Button</title>
 <style>
-    /* .container{
+    .container{
         position: relative;
         width: 30%;
         height: 44px;
@@ -12,7 +12,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 50px;
-        border: 1px solid black  !important;
+        border: 1px solid rgba(0, 0, 0, 0.201) ;
 
     }
 
@@ -26,16 +26,27 @@
     }
     .active {
         background-color: red;
-        border: 1px solid red !important;
-    } */
-
+        border: 1px solid red;
+    }
+.box input[type="radio"]{
+  display: none;
+}
    
 </style>
 </head>
 <body>
   <div class="container">
-    <div class="nav-links box red active">HOME</div>
-    <div class="nav-links box green">ABOUT</div>
+    <div class=" box red active">
+      <label class=" ">
+        <input type="radio" name="direction" value="to-airport" id="to-airport" checked> TO AIRPORT
+    </label>
+    
+    </div>
+    <div class=" box green">
+      <label class="">
+        <input type="radio" name="direction" value="from-airport" id="form-airport"> FROM AIRPORT
+    </label>
+    </div>
   </div>
 
   <script>
@@ -47,6 +58,8 @@
 
         });
     });
+
+    
   </script>
 </body>
 </html>

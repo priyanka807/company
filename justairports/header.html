@@ -161,8 +161,37 @@
         </div>
       </div>
     </div>
+    
+    <div class="select_airport">
+      <div class="to-airport col-md-6 select_airpot_station active_select_airpot_station">
+          <label for="to_airport" id="to_airport">
+              TO AIRPORT
+              <input type="radio" name="airport_selection" value="to_airport" checked>
+          </label>
+      </div>
+      <div class="from-airport col-md-6 select_airpot_station">
+          <label for="from_airport" id="from_airport">
+              FROM AIRPORT
+              <input type="radio" name="airport_selection" value="from_airport">
+          </label>
+      </div>
 
+  </div>
+  <button id="get_state_button">Get State</button>
+  <p id="output"></p>
+  
     <!-- header section end -->
+
+    <script>
+      document.getElementById('get_state_button').addEventListener('click', function() {
+    // Get the value of the selected radio button
+    let selectedValue = document.querySelector('input[name="airport_selection"]:checked').value;
+
+    // Display the selected value (for example, in a paragraph with id "output")
+    document.getElementById('output').textContent = `Selected: ${selectedValue}`;
+});
+
+    </script>
     <script
       src="https://kit.fontawesome.com/df8f44298a.js"
       crossorigin="anonymous"
