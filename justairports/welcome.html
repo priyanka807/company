@@ -76,8 +76,18 @@
     line-height: 30px;
     margin: 0 0 20px 0;
 }
+/* .airport_payment_form{
+    width: 100%;
+    display: flex;
+    
+}
 
-
+.to-airport{
+width: 50%;
+}
+.from-airport{
+    width: 50%;
+} */
 </style>
   <!--welcome_section   style   end-->
   <body>
@@ -131,7 +141,21 @@
                         </div>
                       </div>
 
-                      
+        <form action="" class="airport_payment_form">
+            <div class="row">
+            <div class="to-airport col-md-6">
+            <label for="to-airport">TO AIRPORT</label>
+            <input type="radio"  name="to-airport" value="to-airport"  checked>
+        </div>
+
+        <div class="from-airport col-md-6">
+            <label for="from-airport">FROM AIRPORT</label>
+            <input type="radio"  name="from-airport" value="from-airport">
+        </div>
+    </div>
+        <button>GET ESTIMATE</button>
+        </form>
+
 
                         </div>
                     </div>
