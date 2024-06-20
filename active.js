@@ -43,6 +43,7 @@ const navLinks = document.querySelectorAll('.nav-links')
 navLinks.forEach((elem,i)=>{
 
   elem.addEventListener(('click'),()=>{
+    
     document.querySelector('.active')?.classList.remove('active')
 
     elem.classList.add('active')

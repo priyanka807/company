@@ -421,13 +421,20 @@ color: #fff !important;
         }
  .banner_two ul li i {
             font-size: 12px;
- 
+            margin-top: 12px;
         }
+       
 
         .banner_two a {
             font-size: 14px;
  
         }  
+        .banner_two {
+            /* margin-left:60px; */
+            font-weight: bold;
+        
+            background: #ec1c24;
+            padding: 10px;}
        
         .banner_three .bestpn{
             position: absolute;
@@ -814,3 +821,278 @@ margin-bottom: 20px;
  
  
    /* <!-- footer style end --> */
+
+
+   /* <!-- welcome_section  style   start --> */
+
+
+     .welcome_container {
+       width: 100%;
+     }
+     .welcome_section{
+       padding: 30px;
+     }
+     .welcome_lefts .carousel {
+       text-align: center;
+     }
+     .bokg,
+     .bokg1,
+     .bokg2 {
+       background: #fff;
+       font-size: 40px;
+       text-transform: uppercase;
+       color: #ef1616;
+       padding-bottom: 15px;
+       line-height: 38px;
+       font-weight: bolder;
+     }
+     .bokg1 {
+       color: #1f1d6f !important;
+     }
+     .bokg2 {
+       color: green !important;
+     }
+     .fa {
+       display: inline-block;
+       font: normal normal normal 14px / 1 FontAwesome;
+       font-size: inherit;
+     }
+     .form_container {
+       width: 100%;
+       padding: 20px;
+ 
+       background-color: #1f1d6f;
+     }
+     .form_container .img{
+   
+       padding: 0;
+   width: 100% !important;
+     }
+ 
+     img {
+     overflow-clip-margin: content-box;
+     overflow: clip;
+ }
+     .form_container p {
+       margin-top: 20px;
+       margin-bottom: 20px;
+       border: 0;
+       border-top: 1px solid #eee;
+     }
+     .payment .title {
+       font-family: Roboto, sans-serif;
+       font-size: 23px;
+       text-transform: uppercase;
+       color: #fff;
+       text-align: left;
+       font-weight: 500;
+       line-height: 30px;
+       margin: 0 0 20px 0;
+     }
+ 
+     .form_container input[type="radio"] {
+       display: none;
+     }
+     /* .form_container .control-label{
+       max-width: 100%;
+     } */
+     /*     
+  input[type="radio"] {
+         display: none;
+     } */
+     .select_airport,
+     .select_payment_type {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       /* border: 1px solid #000; */
+       /* border-radius: 50px; */
+       height: 44px;
+     }
+     .select_airport div,
+     .select_payment_type div {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 50%;
+       height: 100%;
+       color: #000;
+       font-weight: 700;
+       /* without overflow design */
+       background-color: #fff;
+       border: 1px solid #000;
+       /* border-radius: 50px; */
+     }
+     .active_select_airpot_station,
+     .active_payment_type {
+       color: #fff !important;
+       background-color: #ef1616 !important;
+       border: 1px solid red !important;
+     }
+     .pick_up .title,
+     .drop-off .title {
+       font-family: Roboto, sans-serif;
+       font-size: 23px;
+       text-transform: uppercase;
+       color: #fff;
+       text-align: left;
+       font-weight: 500;
+       line-height: 30px;
+       margin: 0 0 20px 0;
+     }
+     .pick_up label,
+     .drop-off label {
+       color: #fff;
+       margin: 12px 0px 5px 0px;
+       font-weight: 600;
+     }
+     .pick_up select,
+     .drop-off select {
+       line-height: 30px;
+     }
+     .luggage .title {
+       font-family: Roboto, sans-serif;
+       font-size: 18px;
+       margin-top: 20px;
+       margin-bottom: 5px;
+       text-transform: uppercase;
+       color: #fff;
+       text-align: left;
+       font-weight: 500;
+       line-height: 30px;
+     }
+     .lullage_info  {
+       font-family: arial, sans-serif;
+       width: 100%;
+       border: dotted 1px #225da8;
+       margin-bottom: 20px;
+     }
+ 
+     .lullage_info th {
+       text-align: left;
+       padding: 8px;
+       color: #fff;
+     }
+ 
+     .lullage_info td {
+       background: #225da8;
+       padding: 5px;
+       font-size: 11px;
+       color: #fff;
+     }
+ 
+     .lullage_info  {
+       background-color: #225da8;
+       border: dotted 1px #225da8;
+       font-size: 11px;
+       width: 100%;
+       font-weight: 400;
+       text-transform: none;
+ 
+       margin: 0 0 20px 0;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       border-radius: 5px;
+     }
+     .lullage_info th {
+       font-size: 13px;
+       font-weight: 700;
+       color: #fff;
+       background-color: #01377c;
+       height: 25px;
+     }
+     .select_items select {
+       border-radius: 0px !important;
+       margin-bottom: 15px;
+       line-height: 30px;
+     }
+     .baby_set {
+       font-size: 18px;
+       padding: 0 8px;
+       font-weight: 600;
+       line-height: 28px;
+       text-align: left;
+       font-weight: 600;
+       color: #fff;
+     }
+     .baby_sitting_container {
+       font-weight: 600;
+       color: #fff;
+       line-height: 45px;
+     }
+     .hidden {
+       display: none;
+     }
+     .get_esti {
+       /* margin-top: 20px; */
+       text-transform: uppercase;
+       font-size: 18px;
+       font-weight: 700;
+       line-height: 40px;
+       background: #ec1c24;
+       border: solid 1px #ec1c24;
+     }
+     .get_esti a {
+       text-decoration: none;
+       color: #fff;
+     }
+ 
+     .get_esti:hover {
+       background: #dd363c;
+     }
+     input[type="radio"] {
+       display: none;
+     }
+ .welcome_rights{
+   width: 100%;
+ }
+ .welcome_rights .title{
+     padding: 18px  5px 8px 0px!important;
+     font-size: 25px;
+     line-height: 30px;
+     color: #ec1c24;
+     font-weight: 500;
+     line-height: 1.5;
+ 
+     text-transform: uppercase;
+ }
+     .welcome_rights span{
+    font-size: larger;
+    color: #225da8;
+ }
+ .welcome_rights .table {
+   width: 100%;
+   overflow: hidden;
+   object-fit: contain;
+     border-spacing: 0;
+     border-collapse: collapse;
+ }
+ 
+     .welcome_rights  tbody tr:nth-of-type(odd) td {  
+   background-color: #1f1d6f !important;
+   color: #fff;
+   font-size: 14px;
+ }
+ .welcome_rights p {
+     margin: 0 0 8px;
+     color: #000;
+     line-height: 24px;
+     font-size:14px !important;
+ }
+ @media screen and (max-width:767px){
+   .welcome_rights span{
+     font-size: small;
+   }
+ 
+    .welcome_rights p {
+        padding-left: 5px;
+   }
+   .welcome_section{
+       padding: 0px 0px 5px 5px;
+       /* margin: 5px 0px; */
+     }
+ }
+   
+   
+   /* <!--welcome_section   style   end--> */
