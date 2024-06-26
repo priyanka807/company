@@ -238,11 +238,11 @@ width:30%
 
 /* about banner style start */
 
-.account_banner{
+.career_banner{
     width: 100%;
 
 }
-.account_inner_banner{
+.career_inner_banner{
     background-image: url(../images/about_banner.jpg) !important;
     background-position: cover !important;
     background-repeat: no-repeat !important;
@@ -253,7 +253,7 @@ width:30%
     object-fit: cover;
     background-position: top;
 }
-.account_inner_banner h1 {
+.career_inner_banner h1 {
     text-transform: uppercase;
     font-style: normal;
     margin: 0;
@@ -267,25 +267,40 @@ width:30%
 
 
 /* about innerpage style start  */
-.account_innerpage_container {
+.career_innerpage_container {
     width: 100%;
 }
 
-.account_innerpage_content {
+.career_innerpage_content {
     width: 100%;
     padding: 30px 0px;
 }
 
 
 
-.account_innerpage_content p {
-    margin-bottom: 5px;
-    text-align: justify;
+.career_innerpage_content_left  h3 {
+
+    font-size: 22px;
+    line-height: 30px;
+    color: #f68022;
+    font-weight: 500;
+    margin-bottom: 10px;
+
 }
 
+.career_innerpage_content_left  .table tr td{
+font-size: 18px;
+font-size: smaller;
+font-weight: 600;
+}
+.career_innerpage_content_left  .table  tr:nth-of-type(1) td{
+background-color: #131262 !important;
+}
+.career_innerpage_content_left  .table  tr:nth-of-type(6) td{
+  background-color: #131262 !important;
+  }
 
-
-.account_innerpage_content  .img_thumbnail {
+.career_innerpage_content  .img_thumbnail {
     /* width: 100%; */
     padding: 4px;
     border-radius: 4px;
@@ -294,7 +309,7 @@ width:30%
     margin-bottom: 4px !important;
 }
 
-.account_luggage_section{
+.career_luggage_section{
     border: solid 1px #ddd;
     background: #fff;
     width: 100%;
@@ -303,12 +318,12 @@ width:30%
 
 }
 
-.account_luggage_section .title {
+.career_luggage_section .title {
     margin: 0;
     padding: 4px 12px;
     background: #2a2867;
     font-size: 22px;
-    color: #fff !important;
+    color: #fff;
     -webkit-border-top-left-radius: 5px;
     -webkit-border-top-right-radius: 5px;
     -moz-border-radius-topleft: 5px;
@@ -319,11 +334,11 @@ width:30%
 
 }
 
-.account_luggage_section ul{
+.career_luggage_section ul{
    list-style:  none;
    padding: 0;
 }
-.account_luggage_section ul li a{
+.career_luggage_section ul li a{
 text-decoration: none;
 
     padding: 10px 10px 0;
@@ -332,34 +347,42 @@ text-decoration: none;
 
 
 }
-.account_luggage_section ul li a p{
+.career_luggage_section ul li a p{
     text-align: center ;
     color: black;
 
 }
 
 @media screen and (max-width: 567px) {
-    .account_innerpage_content p {
+
+    .career_innerpage_content p {
         margin: 10px ;
     }
-    .account_innerpage_content_right .img_thumbnail {
+    .career_innerpage_content_left h4{
+      margin-left: 10px;
+        }
+    .career_innerpage_content_right .img_thumbnail {
         width: 100% ;
         margin: 0px 10px}
+
    
 }
 @media screen and (min-width: 568px) and (max-width:767px) {
    
-    .account_innerpage_content p {
+    .career_innerpage_content p {
         margin: 10px ;
     }
-    .account_innerpage_content_right .img_thumbnail {
+    .career_innerpage_content_left h4{
+      margin-left: 10px;
+        }
+    .career_innerpage_content_right .img_thumbnail {
         width: 50% !important;
         margin: 0px 10px }
 }
 
 @media screen and (min-width: 768px) {
    
-    .account_innerpage_container {
+    .career_innerpage_container {
       padding: 10px;
     }
 }
@@ -409,7 +432,7 @@ line-height: 18px;
 .whychose_section .title p {
 margin-top: 10px;
 }
-.best_price {
+.best_career {
 /* width: 100%; */
 text-align: center;
 
@@ -418,27 +441,27 @@ text-align: center;
 font:normal normal normal 14px / 1 FontAwesome;
 
 }
-.best_price i {
+.best_career i {
 font-size: 40px;
 margin-bottom: 20px;
 /* text-align: center; */
 
 }
-.best_price p{
+.best_career p{
 margin-bottom: 5px;
 
 }
 
-.best_price p strong {
+.best_career p strong {
 font-weight: 700;
 font-size: 16px;
 
 }
 @media screen and (max-width: 990px) {
-.best_price {
+.best_career {
     margin-bottom: 15px;
 }
-.best_price p {
+.best_career p {
 font-size: 13px;
 }
 }
