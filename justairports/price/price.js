@@ -53,22 +53,29 @@ event.stopPropagation()
 
 /* login javascript  start */
 
-
-
-
 login_form.addEventListener('submit', function(event) {
     event.preventDefault();
     const formData = new FormData(event.target)
     const formObject = Object.fromEntries(formData.entries())
-    console.log( formObject  ,'formObject')
     localStorage.setItem("LOGIN_DATA",JSON.stringify(formObject))
    const data =  JSON.parse(localStorage.getItem("LOGIN_DATA"))
-   window.location  = "./career.html"
+   window.location  = "./price.html"
 
+ 
    
 });
 
 
       /* login javascript  end */
+
+
+      /* login javascript  end */
+
+
+
+
+
+
+
 
 

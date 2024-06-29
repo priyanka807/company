@@ -70,72 +70,72 @@
 
 
 
-    <!--  navbar  section start -->
+      <!--  navbar  section start -->
 
-    <nav class="navbar navbar-expand-lg "  style="background-color: #2a2867;">
+      <nav class="navbar navbar-expand-lg "  style="background-color: #2a2867;">
         <div class="container-fluid  px-0  px-lg-3">
           <a class="navbar-brand  d-lg-none" href="#"  id="menu_brand">Menu</a>
-
+  
           <div class="navbar-toggle  navbar-toggler"  data-bs-toggle="collapse" id="menu_item"data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars  text-white"></i>
           </div>
-
+  
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div id="borderWhite"></div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbarItems">
                 <li class="nav-item">
-                    <a class="nav-link " aria-current="page" href="">Home</a>
+                    <a class="nav-link " aria-current="page" href="../homepage/home.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="../aboutpage/about.html">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Online Booking</a>
+                    <a class="nav-link" href="../onlinebookingpage/onlinebooking.html">Online Booking</a>
                 </li>
-
+  
                 <li class="nav-item">
-                <a class="nav-link" href="#">Prices</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Account</a>
+                <a class="nav-link" href="../price/price.html">Prices</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Careers</a>
+                <a class="nav-link" href="../account/account.html">Account</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Careers Driver</a>
+                <a class="nav-link" href="./career.html">Careers</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="../careerdriver/careerdriver.html">Careers Driver</a>
                 </li>
                 <li class="nav-item">
+                <a class="nav-link" href="../contact/contact.html">Contact Us</a>
+                </li>
+                <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
-                </li>
-
+                </li> -->
+  
                 <li>
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                 </li>
-
-
+  
+  
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false"  id="Airport">
                         Airports
                     </a>
-
+  
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Heathrow Airport</a></li>
-                        <li><a class="dropdown-item" href="#">Gatwick Airport</a></li>
-                        <li><a class="dropdown-item" href="#">Luton Airport</a></li>
-                        <li><a class="dropdown-item" href="#">Stansted Airport</a></li>
-
-                        <li><a class="dropdown-item" href="#">City Airport</a></li>
-                        <li><a class="dropdown-item" href="#">Southend Airport</a></li>
-
+                        <li><a class="dropdown-item" href="../airports/heathrowAirport.html">Heathrow Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/getwickAirport.html">Gatwick Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/lutonAirport.html">Luton Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/stanstedAirport.html">Stansted Airport</a></li>
+  
+                        <li><a class="dropdown-item" href="../airports/cityAirpot.html">City Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/southendAirport.html">Southend Airport</a></li>
+  
                     </ul>
                 </li>
             </ul>
-
+  
         </div> 
           
         </div>
@@ -429,7 +429,82 @@
   </div>
 
 <!-- footer section end --> 
+<!-- login modal start -->
+<div class="login_popup">
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form autocomplete="off" id="login_form"> 
 
+
+
+            <div class="modal-header">
+                <h4 class="modal-title"><strong>Login</strong></h4> 
+
+                <button class="close" type="button" data-bs-dismiss="modal">�</button> 
+            
+            </div> 
+            
+            
+            
+            <div class="modal-body"> 
+            
+            
+            
+            <div class="form-group">
+            
+            <label>Mobile No.
+            
+            </label>
+            
+            <input name="Phonenumber" class="form-control" id="Phonenumber"   required="" autocomplete="new-email">
+            
+            </div> 
+            
+            
+            
+            <div class="form-group">
+            
+            <label>Password:
+            
+            </label>
+            
+            <input name="password" type="password" class="form-control" id="password"   required="" autocomplete="new-password">
+            
+            </div> 
+            
+            
+            
+            <div class="form-group"> 
+            
+            
+            
+            <p style="float:left;color:red" id="login_msg"></p> 
+            
+            </div> 
+            
+            </div> 
+            
+            
+            
+            <div class="modal-footer">
+                
+        <button class="btn btn-primary" type="submit" id="loginsubmit">Login</button> 
+        <button class="btn btn-success" type="submit" >Sign up</button>
+            
+            </div> 
+            
+            </form>
+     
+        </div>
+
+
+      
+      </div>
+    </div>
+  </div> 
+</div>
+<!-- login modal start -->
 
 
 

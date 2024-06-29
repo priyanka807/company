@@ -288,9 +288,12 @@ width:30%
   }
   .contact_innerpage_content_right p{
     margin-bottom: 5px;
-    font-size: smaller;
+    font-size: 14px;
     text-align: justify;
   }
+  /* .just_airport {
+    font-size: x-small !important;
+  } */
   .contact_innerpage_content_right i{
   font: normal normal normal 14px / 1 FontAwesome;
   font-size: inherit;
@@ -304,8 +307,10 @@ width:30%
 .contact_innerpage_content_right a:hover{
 color: #000 !important;
 }
-  @media screen and (max-width: 567px) {
-  
+  @media screen and (max-width: 767px) {
+    .contact_form_container{
+      margin: 0px 10px;
+  }
   }
 
  
@@ -491,6 +496,95 @@ text-align: left !important;
 
 /* <!-- footer style end --> */
 
+   /* login modal style start */
+
+ 
+   .login_popup .modal-dialog {
+    max-width: 480px;
+}
+.login_popup  .modal-header {
+    background: #2a2867;
+}
+
+.login_popup .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.login_popup .modal-header .modal-title {
+    color: #fff;
+    margin: 0;
+    line-height: 1.42857143;
+    font-size: 20px;
+}
+.login_popup .modal-header .close {
+    margin-top: -2px;
+    padding: 0; ;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+  
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .2;
+
+}
+.login_popup .modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.login_popup .form-group {
+    margin-bottom: 15px;
+}
+.login_popup label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #ec1c24;
+}
+.login_popup .form-control{
+height: 40px;
+    border-radius: 0;
+}
+/* .login_popup .form-control:focus{
+    border-color:1px solid #4e10f8 !important;
+
+        
+} */
+.login_popup .btn {
+    padding: 7px 20px;
+    text-transform: uppercase;
+}
+.login_popup  .modal-footer .btn+.btn {
+    /* margin-bottom: 0; */
+    margin-left: 5px;
+}
+.login_popup  .btn-success {
+    background: #ec1c24;
+    border: solid 1px #ec1c24;
+}
+.login_popup .btn-primary:hover{
+    background: rgb(26, 140, 185);
+
+}
+.login_popup  .btn-success:hover {
+    background: #f52c33;
+
+}
+@media (min-width: 768px) {
+    .modal-dialog {
+        width: 600px;
+        margin: 30px auto;
+    }
+}
+      /* login modal style end */
 
 
 

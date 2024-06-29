@@ -104,20 +104,20 @@
                 <a class="nav-link" href="../account/account.html">Account</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="">Careers</a>
+                <a class="nav-link" href="../carrer/career.html">Careers</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Careers Driver</a>
+                <a class="nav-link" href="../careerdriver/careerdriver.html">Careers Driver</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link" href="../contact/contact.html">Contact Us</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Blog</a>
-                </li>
+                </li> -->
 
                 <li>
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                 </li>
 
 
@@ -128,13 +128,13 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Heathrow Airport</a></li>
-                        <li><a class="dropdown-item" href="#">Gatwick Airport</a></li>
-                        <li><a class="dropdown-item" href="#">Luton Airport</a></li>
-                        <li><a class="dropdown-item" href="#">Stansted Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/heathrowAirport.html">Heathrow Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/getwickAirport.html">Gatwick Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/lutonAirport.html">Luton Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/stanstedAirport.html">Stansted Airport</a></li>
 
-                        <li><a class="dropdown-item" href="#">City Airport</a></li>
-                        <li><a class="dropdown-item" href="#">Southend Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/cityAirpot.html">City Airport</a></li>
+                        <li><a class="dropdown-item" href="../airports/southendAirport.html">Southend Airport</a></li>
 
                     </ul>
                 </li>
@@ -272,7 +272,6 @@
                     <div class="payment">
                       <div class="title">Please! Choose Journey Type</div>
                     </div>
-                    <p id="airport-content" class="text-white"></p>
                     <form
                       action=""
                       class="airport_payment_form"
@@ -1091,6 +1090,85 @@
 
 <!-- footer section end --> 
 
+<!-- login modal start -->
+<div class="login_popup">
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form autocomplete="off" id="login_form"> 
+
+
+
+            <div class="modal-header">
+                <h4 class="modal-title"><strong>Login</strong></h4> 
+
+                <button class="close" type="button" data-bs-dismiss="modal">�</button> 
+            
+            </div> 
+            
+            
+            
+            <div class="modal-body"> 
+            
+            
+            
+            <div class="form-group">
+            
+            <label>Mobile No.
+            
+            </label>
+            
+            <input name="Phonenumber" class="form-control" id="Phonenumber"  required=""  autocomplete="new-email">
+            
+            </div> 
+            
+            
+            
+            <div class="form-group">
+            
+            <label>Password:
+            
+            </label>
+            
+            <input name="password" type="password" class="form-control" id="password"  required=""  autocomplete="new-password">
+            
+            </div> 
+            
+            
+            
+            <div class="form-group"> 
+            
+            
+            
+            <p style="float:left;color:red" id="login_msg"></p> 
+            
+            </div> 
+            
+            </div> 
+            
+            
+            
+            <div class="modal-footer">
+                
+        <button class="btn btn-primary" type="submit" id="loginsubmit">Login</button> 
+        <button class="btn btn-success" type="submit" >Sign up</button>
+
+      
+            
+            </div> 
+            
+            </form>
+     
+        </div>
+
+
+      
+      </div>
+    </div>
+  </div> 
+</div>
+
+<!-- login modal start -->
 
 
 

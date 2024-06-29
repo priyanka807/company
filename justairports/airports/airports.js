@@ -1,4 +1,5 @@
 
+
 // <!-- JAVASCRIPT LOGIC FOR NAVBAR SECTION -->
 
 
@@ -51,8 +52,8 @@ event.stopPropagation()
 
 // <!-- JAVASCRIPT LOGIC FOR NAVBAR SECTION -->
 
-/* login javascript  start */
 
+/* login javascript  start */
 
 
 
@@ -63,12 +64,34 @@ login_form.addEventListener('submit', function(event) {
     console.log( formObject  ,'formObject')
     localStorage.setItem("LOGIN_DATA",JSON.stringify(formObject))
    const data =  JSON.parse(localStorage.getItem("LOGIN_DATA"))
-   window.location  = "./career.html"
 
-   
+   const redirects = [
+    { path: '/heathrowAirport', url: './heathrowAirport.html' },
+    { path: '/getwickAirport', url: './getwickAirport.html' },
+    { path: '/lutonAirport', url: './lutonAirport.html' },
+    { path: '/cityAirport', url: './cityAirport.html' },
+    { path: '/southendAirport', url: './southendAirport.html' },
+    { path: '/stanstedAirport', url: './stanstedAirport.html' },
+
+];
+
+ const matchlocation  = redirects.find((redirects)=>location.pathname.includes(redirects.path))
+ console.log(matchlocation  ,'matchlocation  ')
+ 
+if(matchlocation){
+    window.location = matchlocation.url
+}
+event.target.reset()
 });
 
 
       /* login javascript  end */
+
+
+
+
+
+
+
 
 

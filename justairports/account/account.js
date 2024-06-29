@@ -51,10 +51,14 @@ event.stopPropagation()
 
 // <!-- JAVASCRIPT LOGIC FOR NAVBAR SECTION -->
 
+
 /* login javascript  start */
 
 
-
+const login_form = document.getElementById('login_form');
+const loginsubmit = document.getElementById('loginsubmit');
+const Phonenumber = document.getElementById('Phonenumber');
+const password = document.getElementById('password');
 
 login_form.addEventListener('submit', function(event) {
     event.preventDefault();
@@ -63,12 +67,19 @@ login_form.addEventListener('submit', function(event) {
     console.log( formObject  ,'formObject')
     localStorage.setItem("LOGIN_DATA",JSON.stringify(formObject))
    const data =  JSON.parse(localStorage.getItem("LOGIN_DATA"))
-   window.location  = "./career.html"
+ 
+   window.location  = "./about.html"
 
-   
 });
 
 
       /* login javascript  end */
+
+
+
+
+
+
+
 
 
